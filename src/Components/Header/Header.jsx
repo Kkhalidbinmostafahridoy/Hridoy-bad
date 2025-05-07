@@ -1,23 +1,22 @@
 import { HiBars2 } from "react-icons/hi2";
-import { SiStimulus } from "react-icons/si";
-import nav1 from '../../assets/svg file/nav1.svg'
+import nav1 from '../../assets/svg file/nav1.svg';
 
 const Header = () => {
     return (
-        <div className="mt-6">
-            <div className="navbar max-w-[1140px] mx-auto px-6 py-2 rounded-full bg-[#111820] border-[2px] border-gray-500 backdrop-blur-md text-white">
-                <div className="navbar-start space-x-2">
-                    <div className="navbar-start">
-                        <div className="flex-none">
-                            <button className="btn btn-ghost btn-circle">
-                                <div className="indicator">
-                                    <img className="w-full h-auto" src={nav1} />
-                                </div>
-                            </button>
-                        </div>
-                    </div>
+        <header className="mt-6 px-4">
+            <nav className="navbar max-w-[1140px] mx-auto px-6 py-2 rounded-full bg-[#111820] border-2 border-gray-500 backdrop-blur-md text-white">
+                {/* Left: Logo */}
+                <div className="flex items-center space-x-3">
+                    <button className="btn btn-ghost btn-circle">
+                        <img className="w-8 h-8 object-contain" src={nav1} alt="Logo" />
+                    </button>
+
+                    {/* Mobile Menu Button (visible on small screens) */}
                     <div className="dropdown lg:hidden">
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 text-black rounded-box w-52">
+                        <button tabIndex={0} className="btn btn-ghost btn-circle">
+                            <HiBars2 size={24} />
+                        </button>
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-50 p-2 shadow bg-white text-black rounded-box w-52">
                             <li><a>About</a></li>
                             <li><a>Blog</a></li>
                             <li><a>Work</a></li>
@@ -25,24 +24,23 @@ const Header = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="navbar-center hidden lg:flex"></div>
-                <div className="navbar-end space-x-4">
-                    <ul className="menu menu-horizontal px-1 hidden lg:flex">
-                        <li><a>About</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Work</a></li>
-                        <li><a>Contact</a></li>
-                    </ul>
-                    <div className="flex-none">
-                        <button className="btn btn-ghost btn-circle">
-                            <div className="indicator">
-                                <HiBars2 size={28} />
-                            </div>
-                        </button>
-                    </div>
+
+                {/* Center: Desktop Menu */}
+                <ul className="hidden lg:flex menu menu-horizontal space-x-6 text-sm font-medium ml-auto">
+                    <li><a className="hover:text-gray-300">About</a></li>
+                    <li><a className="hover:text-gray-300">Blog</a></li>
+                    <li><a className="hover:text-gray-300">Work</a></li>
+                    <li><a className="hover:text-gray-300">Contact</a></li>
+                </ul>
+
+                {/* Right: Extra Icon (Optional) */}
+                <div className="hidden lg:flex ml-6">
+                    <button className="btn btn-ghost btn-circle">
+                        <HiBars2 size={24} />
+                    </button>
                 </div>
-            </div>
-        </div>
+            </nav>
+        </header>
     );
 };
 
