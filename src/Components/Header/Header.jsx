@@ -11,7 +11,7 @@ const Header = () => {
                         <div className="flex-none">
                             <button className="btn btn-ghost btn-circle">
                                 <div className="indicator">
-                                    <img className="w-24 h-[30px]" src={nav1} />
+                                    <img className="w-full h-auto" src={nav1} />
                                 </div>
                             </button>
                         </div>

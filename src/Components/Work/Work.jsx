@@ -64,10 +64,10 @@ const Work = () => {
                     </div>
                 </div>
             </div>
-            <div className='grid grid-cols-1 grid-cols-2 grid-cols-3 gap-72 mt-40'>
-                <div className="card mx-[-260px] w-80  shadow-xl mt-[450px]">
+            <div className='grid grid-cols-1 grid-cols-2 grid-cols-3 bg-[#0a0a0a] gap-72 mt-40'>
+                <div className="card bg-[#0a0a0a] mx-[-260px] w-80  shadow-xl mt-[450px]">
                     <figure><img src={card3} alt="card" /></figure>
-                    <div className="card-body flex mt-[-24px]">
+                    <div className="card-body  flex mt-[-24px]">
                         <div>
                             <h2 className="card-title bg">Alcohol Tracker</h2>
                             <p>All-In-One (AIO) Service</p>
@@ -82,7 +82,7 @@ const Work = () => {
                 </div>
                 <div className="card mx-[-205px] w-80 bg-base-100 shadow-xl mt-[450px] bg-[#0a0a0a]">
                     <figure><img src={card4} alt="card" /></figure>
-                    <div className="card-body flex mt-[-24px]">
+                    <div className="card-body bg-[#0a0a0a] flex mt-[-24px]">
                         <div>
                             <h2 className="card-title bg">Alcohol Tracker</h2>
                             <p>All-In-One (AIO) Service</p>
@@ -97,7 +97,7 @@ const Work = () => {
                 </div>
                 <div className="card mx-[-150px] w-80 bg-base-100 shadow-xl mt-[450px] bg-[#0a0a0a]">
                     <figure><img src={card5} alt="card" /></figure>
-                    <div className="card-body flex mt-[-24px]">
+                    <div className="card-body flex bg-[#0a0a0a] mt-[-24px]">
                         <div>
                             <h2 className="card-title bg">Alcohol Tracker</h2>
                             <p>All-In-One (AIO) Service</p>
