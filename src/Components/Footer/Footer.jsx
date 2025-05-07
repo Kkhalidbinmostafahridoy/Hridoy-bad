@@ -1,5 +1,4 @@
 import footer from '../../assets/btn/1.png'
-import footeR from '../../assets/Card/bg-work-.png'
 
 const Footer = () => {
     return (

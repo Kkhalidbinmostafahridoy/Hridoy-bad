@@ -1,4 +1,3 @@
-import React from 'react';
 import MobileCard from '../../assets/Card/1.png';
 import blogCard from '../../assets/Card/2.png';
 import statisticCard from '../../assets/Card/3.png';

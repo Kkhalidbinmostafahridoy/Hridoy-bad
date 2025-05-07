@@ -1,6 +1,3 @@
-import MobileCard from '../../assets/Card/1.png';
-import blogCard from '../../assets/Card/2.png';
-import statisticCard from '../../assets/Card/3.png';
 import bgWork3 from '../../assets/Card/bg-3.png';
 import bg123 from '../../assets/Card/bg-work-.png';
 import card1 from '../../assets/Card/4.png'
@@ -8,7 +5,6 @@ import card2 from '../../assets/Card/5.png'
 import card3 from '../../assets/Card/6.png'
 import card4 from '../../assets/Card/7.png'
 import card5 from '../../assets/Card/8.png'
-import btncard from '../../assets/svg file/btn1.svg'
 import btnAry from '../../assets/svg file/btn1.svg'
 
 const Work = () => {
